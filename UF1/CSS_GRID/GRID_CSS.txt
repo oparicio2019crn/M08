@@ -1,0 +1,21 @@
+CSS GRID:
+
+El Módulo de diseño de cuadrícula CSS ofrece un sistema de diseño basado en cuadrícula, con filas y columnas, que facilita el diseño de páginas web sin tener que usar floats ni posicionamientos.
+
+Un diseño de cuadrícula consta de un elemento principal, con uno o más elementos secundarios.
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>
+
+
+(IMG(css_grid1))
+

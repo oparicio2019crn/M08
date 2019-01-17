@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta author="Oriol Paricio">
+    <meta name="description" content="Horario escolar">
+    <meta name="keywords" content="Horario, escolar">
+    <title>Horario</title>
+
+    <style media="screen">
+    table {
+      font-family: Helvetica;
+    }
+    th {
+      font-size: 1em;
+      transition: 0.5s;
+    }
+      th:hover {
+        background-color: purple;
+        font-size: 1.3em;
+        transition: 0.5s;
+      }
+      th, tr {
+        border-style: hidden;
+      }
+      #leyenda {
+        margin: 0 auto;
+        text-align: left;
+        width: 600px;
+      }
+      p {
+        font-family: Helvetica;
+        font-style: italic;
+        font-size: 0.8em;
+      }
+
+      .m6 {
+        color: white;
+      }
+      .m6:hover {
+        color: #ffcc00;
+      }
+      .m7 {
+        color: white;
+      }
+      .m7:hover {
+        color: pink;
+      }
+      .m8 {
+        color: white;
+      }
+      .m8:hover {
+        color: orange;
+      }
+      .m9 {
+        color: white;
+      }
+      .m9:hover {
+        color: lime;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1 align="center">Horario</h1>
+    <table border="3" bgcolor="orange" width="600px" align="center">
+      <tr bgcolor="#EE964B">
+        <th width="40px" height="60px"></th>
+        <th width="40px" height="60px">Dl</th>
+        <th width="40px" height="60px">Dm</th>
+        <th width="40px" height="60px">Dx</th>
+        <th width="40px" height="60px">Dj</th>
+        <th width="40px" height="60px">Dv</th>
+      </tr>
+      <tr bgcolor="#F4D35E">
+        <th width="40px" height="60px" >16:00-17:00</th>
+        <th width="40px" height="60px" class="m7">M7</th>
+        <th width="40px" height="60px" class="m6">M6</th>
+        <th width="40px" height="60px" >TUTO</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+      </tr>
+      <tr bgcolor="#28AFB0">
+        <th width="40px" height="60px" >17:00-18:00</th>
+        <th width="40px" height="60px" class="m7">M7</th>
+        <th width="40px" height="60px" class="m6">M6</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+      </tr>
+      <tr bgcolor="#1F7C9B">
+        <th width="40px" height="60px" >18:00-18:30</th>
+        <th width="40px" height="60px">P</th>
+        <th width="40px" height="60px">A</th>
+        <th width="40px" height="60px">T</th>
+        <th width="40px" height="60px">I</th>
+        <th width="40px" height="60px">O</th>
+      </tr>
+      <tr bgcolor="#19647E">
+        <th width="40px" height="60px" >18:30-19:30</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+        <th width="40px" height="60px" class="m6">M6</th>
+        <th width="40px" height="60px" class="m9">M9</th>
+        <th width="40px" height="60px" class="m9">M9</th>
+        <th width="40px" height="60px" class="m7">M7</th>
+      </tr>
+      <tr bgcolor="#1F271B">
+        <th width="40px" height="60px" >19:30-20:30</th>
+        <th width="40px" height="60px" class="m8">M8</th>
+        <th width="40px" height="60px" class="m6">M6</th>
+        <th width="40px" height="60px" class="m9">M9</th>
+        <th width="40px" height="60px" class="m9">M9</th>
+        <th width="40px" height="60px" class="m7">M7</th>
+      </tr>
+    </table>
+    <div id="leyenda">
+      <p><font color="#ffcc00">
+        M6 - Packaging
+      </font></p>
+      <p><font color="pink">
+        M7 - JS / Jquery
+      </font></p>
+      <p><font color="orange">
+        M8 - HTML / CSS
+      </font></p>
+      <p><font color="lime">
+        M9 - Marqueting
+      </font></p>
+    </div>
+
+  </body>
+</html>
