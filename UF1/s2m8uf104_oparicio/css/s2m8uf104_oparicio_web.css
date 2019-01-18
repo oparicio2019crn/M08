@@ -15,7 +15,6 @@ body{
 
 #contenedor{
   width: 851px;
-  background-color: orange;
   margin: 0 auto;
   height: 3074px;
 }
@@ -42,7 +41,7 @@ body{
   top: 150px;
   left: 250px;
   color: white;
-  font-family: Lucida Grande;
+  font-family: 'Lucida Grande', Tahoma, segoe UI, San Francisco, Roboto;
   text-shadow: 2px 2px 5px black;
 }
 #cap ul li{
@@ -69,12 +68,36 @@ body{
   width: 100%;
   height: 2828px;
   background-color: grey;
-  margin-top: 14px;
+  float: left;
+  margin-top: -33px;
 }
+
+#esquerra{
+  width: 323px;
+  float: left;
+  height: 1000px;
+}
+
 .esquerra{
+  width: 323px;
+  height: 200PX;
+  float: left;
+}
+
+#dreta{
+  width: 516px;
+  float: right;
+}
+
+.dreta{
+  width: 514px;
+  height: 100PX;
+  float: right;
+}
+
+.esquerra, .dreta{
   background-color: white;
   border-radius: 3px;
   border: solid 1px #DDD;
-  width: 323px;
-  height: 45px;
+  margin-top: 14px;
 }
