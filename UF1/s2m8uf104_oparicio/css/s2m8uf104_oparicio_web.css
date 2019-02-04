@@ -11,6 +11,7 @@ body{
   top: 0;
   left: 0;
   right: 0;
+  z-index: 50;
 }
 
 #contenedor{
@@ -67,7 +68,7 @@ body{
 #cos{
   width: 100%;
   height: 2828px;
-  background-color: grey;
+  background-color: #e6e8eb;
   float: left;
   margin-top: -33px;
 }
@@ -79,8 +80,7 @@ body{
 }
 
 .esquerra{
-  width: 323px;
-  height: 200PX;
+  width: 299px;
   float: left;
 }
 
@@ -89,15 +89,315 @@ body{
   float: right;
 }
 
-.dreta{
-  width: 514px;
-  height: 100PX;
-  float: right;
-}
 
 .esquerra, .dreta{
   background-color: white;
   border-radius: 3px;
   border: solid 1px #DDD;
   margin-top: 14px;
+  padding: 12px;
+  font-size: 12px;
+}
+.dreta{
+  width: 490px;
+  float: right;
+  padding: 0 12px;
+}
+
+
+#presentacio li, #amistats li, #fotos li{
+  list-style-type: none;
+}
+
+.estudis{
+  list-style-image: url(../img/icn/estudis.png);
+}
+
+.domicili{
+  list-style-image: url(../img/icn/domicili.png);
+}
+
+.treball{
+  list-style-image: url(../img/icn/feina.png);
+}
+
+.neixament{
+  list-style-image: url(../img/icn/ubi.png);
+}
+
+#presentacio p{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+h3{
+  text-indent: 30px;
+  height: 24px;
+  background-image: url(../img/lateral.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  line-height: 1.8em;
+}
+
+#amistats h3{
+  background-position: 0 -48px;
+}
+
+#amistats ul{
+  background-color: orange;
+  padding: 0;
+  margin: 0;
+}
+
+#amistats ul li{
+  color: white;
+  font-size: 1.2em;
+  width: 95.65px;
+  height: 95.65px;
+  float: left;
+  margin: 2px;
+  background-size: cover;
+  position: relative;
+}
+#amistats ul li p{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+#amistats li a:link{
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 5px black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#amistats li a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+#payasa{
+  background-image: url(https://yromero2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/perfil1.jpg);
+}
+#noe{
+  background-image: url(https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg);
+}
+#nachete{
+  background-image: url(https://iprados2019crn.github.io/M08/s2m8uf104_iprados/img/fotoperfil.jpg);
+}
+#vh{
+  background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
+}
+#gm{
+  background-image: url(https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg);
+}
+#siria{
+  background-image: url(https://sfernandez2019crn.github.io/M08/s2m8uf104_fernandez/img/gos.png);
+}
+#ck{
+  background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
+}
+#carranco{
+  background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
+}
+#morao{
+  background-image: url(https://olopez2019crn.github.io/M08/s2m8uf0104_lopez/img/homero.png);
+}
+
+#fotos h3{
+  background-position: 0 -24px;
+}
+
+#surpirse h3{
+  background-position: 0 -72px;
+}
+
+#part1{
+
+}
+
+#part1 ul{
+  padding: 0 12px;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  left: -12px;
+}
+
+#part1 li{
+  display: inline;
+  float: left;
+  margin: 0 5px 3px 5px;
+}
+#part1 #foto_video, #etiquetar, #sentimiento{
+  position: relative;
+  top: 10px;
+  padding: 10px 17px 10px 35px;
+  border-radius: 20px;
+  background-color: #f3f4f6;
+}
+#part1 #pts{
+  position: relative;
+  top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f3f4f6;
+}
+
+#part1 #crear{
+  padding-top: 5px;
+  height: 48px;
+  box-shadow: 0 1px 0 #d5d6d7;
+  background-color: #f3f4f6;
+}
+#crear li{
+  padding-left: 20px;
+}
+
+#publica{
+  background-image: url(../img/masicn/crear_pub.png);
+  background-repeat: no-repeat;
+}
+#publica_foto{
+  background-image: url(../img/masicn/fotovideo.png);
+  background-repeat: no-repeat;
+}
+#publica_video{
+  background-image: url(../img/masicn/directo.png);
+  background-repeat: no-repeat;
+}
+#aconteciment{
+  background-image: url(../img/masicn/acontecimientos.png);
+  background-repeat: no-repeat;
+}
+
+#part1 input{
+  position: relative;
+  top: -5px;
+}
+
+.miniperfil{
+  position: relative;
+  border-radius: 100px;
+  top: 15px;
+  width: 50px;
+}
+
+#pensament{
+  height: 71px;
+  border: 0;
+}
+#foto_etiquetar{
+  height: 50px;
+  box-shadow: 0 -1px 0 #d5d6d7;
+}
+
+#foto_video{
+  background-image: url(../img/imatges.png);
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+}
+#etiquetar{
+  background-image: url(../img/etiquetar.png);
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+}
+#sentimiento{
+  background-image: url(../img/emojis.png);
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+}
+
+#nombres{
+  line-height: 0;
+  margin-left: 50px;
+}
+
+#diamesany{
+  margin-left: 50px;
+}
+
+.publi{
+  background-image: url(../img/perfils/yai.png);
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: 10px 5px;
+}
+
+.publi li{
+  display: inline;
+  margin: 30px;
+}
+
+.publi .bajo_publi{
+  margin: 0;
+  padding: 0;
+}
+
+.publi ul .mgs_coments{
+  text-indent: 30px;
+  background-repeat: no-repeat;
+  padding: 2.5px 0 2.5px 0;
+  margin: 0;
+}
+
+.publi ul .like{
+  background-image: url(../img/masicn/like.png);
+  padding-left: 40px;
+  margin-right: 150px;
+}
+
+.publi ul .comentaris{
+
+}
+
+.publi .coments{
+  float: left;
+}
+
+.publi .botonera{
+  height: 20px;
+  padding: 5px 5px 0 25px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+
+}
+
+.publi .botonera li{
+  background-position: 3px 3px;
+  background-repeat: no-repeat;
+  padding: 5px 5px 5px 25px;
+}
+
+.publi .mg{
+  background-image: url(../img/masicn/mg.png);
+}
+
+.publi .comen{
+  background-image: url(../img/masicn/coment.png);
+}
+
+.publi .comp{
+  background-image: url(../img/masicn/compartir.png);
+}
+.publi .comentari{
+  height: 3em;
+  border-radius: 10px;
+  border: solid 1px grey;
+  width: 100%;
+  margin-bottom: 8px;
+  text-indent: 10px;
+}
+
+.publi .gif{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.publi .video{
+  width: 490px;
+  height: 275.625px;
+  margin-bottom: 10px;
 }
