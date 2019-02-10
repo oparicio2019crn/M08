@@ -691,7 +691,7 @@
 
   #m_info ul li{
     display: inline;
-    padding: 25px 50px 27px 50px;
+    padding: 25px 40px 27px 40px;
   }
   #m_info a{
     color: black;
@@ -807,7 +807,7 @@
   }
 
   #pensament{
-    width: 90%;
+    width: 85%;
     height: 71px;
     border: 0;
   }
@@ -845,13 +845,17 @@
   .publi{
     background-image: url(../img/perfils/yai.png);
     background-repeat: no-repeat;
-    background-size: 8%;
+    background-size: 60px;
     background-position: 10px 5px;
+  }
+
+  .publi ul{
+    text-align: center;
   }
 
   .publi li{
     display: inline;
-    margin: 30px;
+    margin: 25px;
   }
 
   .publi .bajo_publi{
