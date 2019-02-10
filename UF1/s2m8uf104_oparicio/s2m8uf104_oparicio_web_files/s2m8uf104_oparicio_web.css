@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     background-color: #e6e8eb;
-    overflow-x: hidden;
   }
 
   #barra{
@@ -59,13 +58,7 @@
     left: 21%;
     line-height: 43px;
     font-family: Lucida Grande;
-    transition: 0.5s;
   }
-
-  #cap li:hover{
-    filter: opacity(0.5);
-  }
-
   #cap ul{
     background-color: white;
     position: relative;
@@ -112,11 +105,6 @@
     width: 490px;
     float: right;
     padding: 0 12px;
-  }
-
-
-  .mobile_icons{
-    display: none;
   }
 
 
@@ -173,7 +161,6 @@
     margin: 2px;
     background-size: cover;
     position: relative;
-    transition: 0.5s;
   }
   #amistats ul li p{
     position: absolute;
@@ -192,13 +179,6 @@
   #amistats li a:visited{
     color: white;
     text-decoration: none;
-  }
-  #amistats li:hover{
-    filter: opacity(0.8);
-  }
-
-  #m_info{
-    display: none;
   }
 
   #payasa{
@@ -441,60 +421,56 @@
 
 
 
-
-
-
-
 /* VERSIONS MÒBILS */
 
 @media only screen and (max-width: 959px){
 
   body{
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #FFF;
+    background-color: #e6e8eb;
   }
 
   #barra{
     height: 44px;
-    background-color: #AAA;
+    background-color: #3a5ca9;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 50;
-    display: none;
   }
 
   #contenedor{
-    width: 100%;
+    width: 851px;
     margin: 0 auto;
     height: 3074px;
   }
 
   #cap{
     width: 100%;
-    height: 350px;
+    height: 232px;
     background-image: url(../img/cabecera.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: -20px;
   }
-  #cap img{
-    height: 50%;
-    z-index: 48;
-    margin-left: 38%;
+  #cap img{0
+    position: relative;
+    z-index: 49;
+    top: 20px;
+    left: 21px;
+    border-radius: 50%;
     border: solid 4px white;
     box-shadow: 2px 2px 5px black;
   }
   #cap h2{
     position: relative;
-    z-index: 49;
-    top: 280px;
-    left: 41%;
-    color: black;
+    z-index: 50;
+    top: 150px;
+    left: 250px;
+    color: white;
     font-family: 'Lucida Grande', Tahoma, segoe UI, San Francisco, Roboto;
+    text-shadow: 2px 2px 5px black;
   }
   #cap ul li{
     list-style: none;
@@ -508,13 +484,18 @@
     font-family: Lucida Grande;
   }
   #cap ul{
-    display: none;
+    background-color: white;
+    position: relative;
+    top: -33px;
+    height: 43px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
   }
 
   #cos{
     width: 100%;
     height: 2828px;
-    background-color: #FFF;
+    background-color: #e6e8eb;
     float: left;
     margin-top: -33px;
   }
@@ -535,7 +516,7 @@
 
 
   .esquerra, .dreta{
-    width: 100%;
+    width: 827px;
     background-color: white;
     border-radius: 3px;
     border: solid 1px #DDD;
@@ -557,10 +538,6 @@
     list-style-type: none;
   }
 
-  #presentacio ul li{
-    font-size: 1.3em;
-  }
-
   .estudis{
     list-style-image: url(../img/icn/estudis.png);
   }
@@ -577,60 +554,18 @@
     list-style-image: url(../img/icn/ubi.png);
   }
 
-  .mobile_icons ul{
-    margin: 30px auto;
-    text-align: center;
-  }
-
-  .mobile_icons ul li{
-    display: inline;
-    margin: 0 5% 0 5%;
-    padding-top: 35px;
-    transition: 0.5s;
-  }
-  .mobile_icons ul li:hover{
-    filter: opacity(0.5);
-  }
-
-  #seguint{
-    background-image: url(../img/m_icn/following.png);
-    background-repeat: no-repeat;
-    background-position: 10px 0;
-  }
-  #missatge{
-    background-image: url(../img/m_icn/message.png);
-    background-repeat: no-repeat;
-    background-position: 5px 0;
-  }
-  #trucar{
-    background-image: url(../img/m_icn/call.png);
-    background-repeat: no-repeat;
-    background-position: 3px 0;
-  }
-  #video_m{
-    background-image: url(../img/m_icn/video.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   #presentacio p{
     padding-bottom: 10px;
     border-bottom: 1px solid #DDD;
-    display: none;
   }
 
-  #presentacio h3{
+  h3{
     text-indent: 30px;
     height: 24px;
     background-image: url(../img/lateral.png);
     background-repeat: no-repeat;
     background-size: 24px;
     line-height: 1.8em;
-    display: none;
-  }
-
-  #amistats{
-    display: none;
   }
 
   #amistats h3{
@@ -641,24 +576,18 @@
     background-color: orange;
     padding: 0;
     margin: 0;
-    width: 100%;
   }
 
-  #amistats ul li{
+  #amistats ul li, #fotos ul li{
     color: white;
     font-size: 1.2em;
-    width: 10em;
-    height: 10em;
+    width: 268.66666667px;
+    height: 268.66666667px;
     float: left;
     margin: 2px;
     background-size: cover;
     position: relative;
   }
-
-  #fotos{
-    display: none;
-  }
-
   #amistats ul li p{
     position: absolute;
     left: 10px;
@@ -676,25 +605,6 @@
   }
   #amistats li a:visited{
     color: white;
-    text-decoration: none;
-  }
-
-  #m_info{
-    border: none;
-  }
-
-  #m_info ul{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  #m_info ul li{
-    display: inline;
-    padding: 25px 50px 27px 50px;
-  }
-  #m_info a{
-    color: black;
     text-decoration: none;
   }
 
@@ -727,16 +637,46 @@
   }
 
 
+  #payasa{
+    background-image: url(img/muestras/1.jpg);
+  }
+  #noe{
+    background-image: url(https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg);
+  }
+  #nachete{
+    background-image: url(https://iprados2019crn.github.io/M08/s2m8uf104_iprados/img/fotoperfil.jpg);
+  }
+  #vh{
+    background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
+  }
+  #gm{
+    background-image: url(https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg);
+  }
+  #siria{
+    background-image: url(https://sfernandez2019crn.github.io/M08/s2m8uf104_fernandez/img/gos.png);
+  }
+  #ck{
+    background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
+  }
+  #carranco{
+    background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
+  }
+  #morao{
+    background-image: url(https://olopez2019crn.github.io/M08/s2m8uf0104_lopez/img/homero.png);
+  }
+
+
 
   #fotos h3{
     background-position: 0 -24px;
   }
 
-  #surpirse{
-    display: none;
+  #surpirse h3{
+    background-position: 0 -72px;
   }
 
   #part1{
+
   }
 
   #part1 ul{
@@ -807,7 +747,6 @@
   }
 
   #pensament{
-    width: 90%;
     height: 71px;
     border: 0;
   }
@@ -873,8 +812,7 @@
   }
 
   .publi ul .comentaris{
-    position: relative;
-    left: 340px;
+
   }
 
   .publi .coments{
@@ -910,7 +848,7 @@
     height: 3em;
     border-radius: 10px;
     border: solid 1px grey;
-    width: 97%;
+    width: 100%;
     margin-bottom: 8px;
     text-indent: 10px;
   }
@@ -921,8 +859,8 @@
   }
 
   .publi .video{
-    width: 828px;
-    height: 445.6875px;
+    width: 851px;
+    height: 478.6875px;
     margin-bottom: 10px;
   }
 
