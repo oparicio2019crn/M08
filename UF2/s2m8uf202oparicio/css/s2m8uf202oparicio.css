@@ -1,0 +1,291 @@
+*{
+	position: relative;
+}
+.esquerra{
+	float: left;
+}
+.dreta{
+	float: right;
+}
+
+body{
+	background-color: grey;
+}
+
+.cap{
+		width: 500px;
+		height: 700px;
+		background-color: #fdddca;
+		border-radius: 200px 200px 300px 300px;
+		margin: 50px auto;
+}
+
+.pel{
+		width: 100%;
+		background-color: #2e1b0f;
+		height: 150px;
+		border-radius: 200px 200px 0 0;
+}
+.patillasA{
+	width: 15px;
+	height: 185px;
+	background: linear-gradient(0deg, rgba(255,255,255,0), rgba(46,27,15,1));
+	opacity: 0.5;
+	top: 150px;
+	z-index: 999;
+}
+.patillasB{
+	width: 15px;
+	height: 185px;
+	background: linear-gradient(0deg, rgba(255,255,255,0), rgba(46,27,15,1));
+	opacity: 0.5;
+	top: 150px;
+	z-index: 999;
+}
+
+.mechon{
+	position: absolute;
+	background-color: #2e1b0f;
+	width: 30px;
+	height: 100px;
+	left: 100px;
+	top: -5px;
+	border-radius: 100px 0 0 100px;
+}
+.mechonmas{
+	top: 0;
+	left: 20px;
+}
+
+.front{
+	height: 80px;
+	background-color: #fdddca;
+}
+
+.celles{
+	height: 50px;
+}
+
+	.celles .cella{
+		width: 30%;
+		height: 40px;
+		margin: 5px;
+		background-color: #2e1b0f;
+	}
+	.celles .objA{
+		border-radius: 10px 50px;
+		left: 50px;
+	}
+	.celles .objB{
+		border-radius: 50px 10px;
+		right: 50px;
+	}
+
+
+.ulls{
+	height: 100px;
+	z-index: 5000;
+}
+	.parpelles .parpella{
+		background-color: #ecc9aa;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+	}
+	.parpelles .objA{
+		left: 90px;
+	}
+	.parpelles .objB{
+		right: 90px;
+	}
+
+	.blancs .blanc{
+		top: 10px;
+		background-color: white;
+		height: 80px;
+		width: 100px;
+		border-radius: 50%;
+
+	}
+	.blancs .objA{
+		left: 0;
+	}
+	.blancs .objB{
+		right: 0;
+	}
+	.tancaulls {
+		height: 80px;
+		width: 100px;
+		background-color: none;
+		transition: 1s;
+		border-radius:50%;
+		z-index: 2000001;
+		overflow: hidden;
+		top: -60px;
+	}
+
+.tusuperior {
+		position: absolute;
+		width: 100px;
+		height: 80px;
+		top: 0;
+		left: 0;
+		background-image: url(../img/tu2.svg);
+		background-size: 100%;
+		background-position: 0 -160px;
+		background-repeat: no-repeat;
+		transition: 1s;
+}
+
+	.tancaulls:hover>.tusuperior{
+		background-position: 0 0px;
+		float: none;
+	}
+
+
+	.irisos .iris{
+		background-color: #6699CC;
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+	}
+	.irisos .objA{
+		left: 20px;
+		top: 10px;
+	}
+	.irisos .objB{
+		right: 20px;
+		top: 10px;
+	}
+
+	.pupiles .pupila{
+		background-color: black;
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+	}
+	.pupiles .objA{
+		left: 17.5px;
+		top: 17.5px;
+	}
+	.pupiles .objB{
+		right: 17.5px;
+		top: 17.5px;
+	}
+
+.orelles{
+	width: 100%;
+	height: 80px;
+}
+	.orelles .orella{
+		background-color: #fdddca;
+		width: 50px;
+		height: 100px;
+		top: -45px;
+	}
+	.orelles .objA{
+		left: -50px;
+		border-radius: 50% 0 0 50%;
+	}
+	.orelles .objB{
+		right: -50px;
+		border-radius: 0 50% 50% 0;
+	}
+	.arrecada{
+		background-color: #bdbdbd;
+		border-radius: 25%!important;
+		width: 10px;
+		height: 25px;
+		top: 88px;
+	}
+	.arrecades .objB{
+		right: -15px;
+	}
+	.cruz{
+		width: 25px;
+		height: 5px;
+		background-color: #bdbdbd;
+		border-radius: 0 !important;
+		top: 0px;
+		left: -7px !important;
+	}
+	.palocruz{
+		width: 5px;
+		height: 35px;
+		background-color: #bdbdbd;
+		border-radius: 0 !important;
+		top: 25px;
+		left: 3px !important;
+	}
+
+
+
+	.lineanas{
+		background-color: #ecc9aa;
+		width: 100px;
+		height: 130px;
+		left: -65px;
+		top: -130px;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	.lineanasA{
+		background-color: #fdddca;
+		width: 100px;
+		height: 140px;
+		top: -8px;
+		left: -1px;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	.foratA{
+		width: 40px;
+		height: 40px;
+		background-color: #ecc9aa;
+		left: 140px;
+		border-radius: 50%;
+	}
+	.foratAA{
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		background-color: #fdddca;
+		left: 3px;
+		top: -3px;
+	}
+
+	.foratB{
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		background-color: #ecc9aa;
+		right: 140px;
+	}
+	.foratBB{
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		background-color: #fdddca;
+		right: 3px;
+		top: -3px;
+	}
+
+
+.boca{
+	margin: 0 auto;
+	top: -50px;
+}
+	.llaviA{
+		border-radius: 50% 50%;
+		background-color: #ec8686;
+		width: 150px;
+		height: 50px;
+		left: 150px;
+	}
+	.llaviB{
+		border-radius: 50% 50%;
+		background-color: #ec8686;
+		width: 150px;
+		height: 50px;
+		right: 150px;
+	}
