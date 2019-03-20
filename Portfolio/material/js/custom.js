@@ -143,7 +143,7 @@ $(document).ready(function () {
                 $(form).ajaxSubmit({
                     type: "GET",
                     data: $(form).serialize(),
-                    url: "../../process.php",
+                    url: "http://cors.io/?https://github.com/oparicio2019crn/M08/blob/master/Portfolio/process.php",
                     success: function () {
                         $('#contact :input').attr('disabled', 'disabled');
                         $('#contact').fadeTo("slow", 1, function () {
