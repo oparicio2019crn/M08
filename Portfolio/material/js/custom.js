@@ -141,7 +141,7 @@ $(document).ready(function () {
             },
             submitHandler: function (form) {
                 $(form).ajaxSubmit({
-                    type: "post",
+                    type: "POST",
                     data: $(form).serialize(),
                     url: "../../process.php",
                     success: function () {
