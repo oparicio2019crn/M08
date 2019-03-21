@@ -457,7 +457,7 @@ a.active {
 
 #projects {
     padding: 100px 0;
-    height: 2300px;
+    height: 3300px;
 }
 
 .portfolio .categories-grid span {
@@ -762,16 +762,100 @@ fieldset {
 
 /* Responsive media queries
 ==================================================*/
+@media (max-width: 1199px) {
+    .portfolio .categories-grid .categories ul li a {
+        padding: 0 2px;
+    }
+    #projects {
+        height: 2800px;
+    }
+}
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
     }
+    #projects {
+        height: 4400px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .timeline-event-copy {
         width: 90%;
         left: 2em;
+    }
+    #projects {
+        height: 13600px;
+    }
+}
+
+@media (max-width: 758px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: 13600px;
+    }
+}
+
+@media (max-width: 741px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: 13400px;
+    }
+}
+
+@media (max-width: 733px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: 13200px;
+    }
+}
+
+@media (max-width: 716px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: 12900px;
+    }
+}
+
+@media (max-width: 696px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: 12500px;
+    }
+}
+
+@media (max-width: 672px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: 12300px;
+    }
+}
+
+@media (max-width: 665px) {
+    .timeline-event-copy {
+        width: 90%;
+        left: 2em;
+    }
+    #projects {
+        height: auto;
     }
 }
 
@@ -792,6 +876,9 @@ fieldset {
         list-style: none;
         margin: 10px 0;
     }
+    #projects {
+        height: auto;
+    }
 }
 
 @media (max-width: 420px) {
@@ -800,5 +887,8 @@ fieldset {
     }
     nav li a {
         font-size: 10px;
+    }
+    #projects {
+        height: auto;
     }
 }
