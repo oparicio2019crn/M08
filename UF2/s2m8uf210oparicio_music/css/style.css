@@ -328,4 +328,7 @@ background: rgba(85, 251, 210, 0.5);
     right: 0;
     top: 80px;
   }
+  .lista-playlist{
+    box-shadow: none;
+  }
 }
