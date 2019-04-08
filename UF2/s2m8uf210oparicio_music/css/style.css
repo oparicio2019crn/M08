@@ -298,7 +298,7 @@ background: rgba(85, 251, 210, 0.5);
   .lista-dreta{
     overflow: scroll;
     width: 97.5%;
-    box-shadow: 0 0 10px black;
+    box-shadow: none;
   }
   ::-webkit-scrollbar {
     display: none;
@@ -327,8 +327,5 @@ background: rgba(85, 251, 210, 0.5);
     position: absolute;
     right: 0;
     top: 80px;
-  }
-  .lista-playlist{
-    box-shadow: none;
   }
 }
