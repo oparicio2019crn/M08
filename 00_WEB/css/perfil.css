@@ -1,0 +1,135 @@
+.nav{
+  background-color: #484b54;
+  background-position: center;
+  width: 100%;
+  height: 130px;
+}
+.nav h2{
+  top: 60px;
+  left: 50px;
+  color: #FFF;
+}
+
+.flecha{
+  position: fixed;
+  top: 52px;
+  left: 10px;
+  z-index: 9999999;
+}
+
+.flecha i{
+  color: #f8ab08;
+  font-size: 3em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.flecha:hover i{
+  color: #FFF;
+}
+.fotoperfil{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 250px;
+}
+.fotoperfil #img_perfil{
+  background: #f8ab08;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  top: 25px;
+  bottom: 25px;
+  border-radius: 50%;
+}
+
+
+
+.apartadosperfil{
+  width: 100%;
+  height: 100px;
+  background-color: #484b54;
+}
+.apartadosperfil input{
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.apartperfil{
+  width: 33.33%;
+  background-color: #484b54;
+  height: 100px;
+  float: left;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.apartperfil:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.apartperfil:nth-child(2){
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.apartperfil:hover h2{
+  color: #f8ab08;
+}
+.infoperfil, .valoraciones{
+  width: 80%;
+  margin: 0 auto;
+  top: 30px;
+  display: none;
+}
+
+
+
+/* VALORACION ESTRELLAS */
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** ESTRELLAS VALORACIÓN *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+  margin: 5px;
+  font-size: 3em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+ float: right;
+}
+
+/***** ESTRELLAS ANIMACION HOVER *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+/* ------------------------- */

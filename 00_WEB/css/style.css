@@ -1,0 +1,391 @@
+*{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+a:hover{
+  text-decoration: none !important;
+}
+
+/* PRECARGA */
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../imgs/logo/logo.svg') 50% 50% no-repeat #3a3a3a;
+    background-size: 50%;
+}
+
+/* ACORDEON */
+.accordion_box{
+  width: 80%;
+  margin: 0 auto;
+  padding: 8% 0 0;
+}
+.ui-accordion-header { transition: 0.3s;}
+.ui-accordion-header.ui-state-active {
+  background-color: #f8ab08;
+  color: black;
+  letter-spacing: 3px;
+}
+/* .ui-widget-content{
+  background: none !important;
+  border: none !important;
+  color: #FFF !important;
+} */
+
+.title_h1{
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+/* FONDO */
+
+#background_login{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+/* ---------------------------------- */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.slides {
+  overflow: hidden;
+  left: 15%;
+  width: 85%;
+  height: 100vh;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+.slides .slide {
+  height: 100vh;
+  overflow: scroll;
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-size: cover;
+}
+
+/* LIKE BUTTON */
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  background: url(http://imagizer.imageshack.com/img923/4545/XdJDuY.png) no-repeat;
+  cursor: pointer;
+}
+
+.heart-blast {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
+
+
+/* ------------------------------ */
+
+/* Slide 1 Estilo */
+#slider-wrapper{
+  top: 15%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-caption {
+  text-align: right;
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slide-caption h6 {
+  margin-top: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.slide-caption h2 {
+  margin-top: 0px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+}
+
+.title_jop{
+  top: 20px;
+  color: #f8ab08;
+  font-size: 6em;
+  font-family: 'Optien', Helvetica;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+.title_apartats{
+  top: 25px;
+  color: #f8ab08;
+  font-size: 6em;
+  font-family: 'Montserrat', Helvetica;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+.slogan{
+  font-family: 'Montserrat', Helvetica;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.5);
+}
+
+.apartados{
+  background-image: url(../imgs/empresas/ribs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 49%;
+  height: 300px;
+  margin-top: 20px;
+  float: left;
+  box-shadow: 0 0 5px black;
+}
+.apartados:nth-child(even){
+  float: right;
+}
+
+
+.apartado-int{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.55);
+  text-align: center;
+}
+.apartado-int h1{
+  color: #FFF;
+  text-align: center;
+  top: 30px;
+  z-index: 99999;
+  font-family: 'Montserrat', sans-serif;
+}
+.apartado-int p{
+  color: #FFF;
+  text-align: center;
+  top: 30px;
+  z-index: 99999;
+  margin: 0 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+.apartado-int i{
+  position: absolute;
+  color: #FFF;
+  font-size: 3em;
+  z-index: 99999;
+  bottom: 20px;
+}
+/* Slide 2 Style */
+.second-content {
+  top: 15%;
+}
+
+/* Buscador */
+.buscador{
+  margin:0 auto;
+  z-index: 9999999;
+}
+.buscador label{
+  color: #f8ab08;
+  font-size: 3em;
+}
+#buscador{
+  width: 80%;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+
+.register-form label::before, .login-form label::before{
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+/* / */
+/* TEXT CHAT */
+.chat-text{
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.chat-text:hover{
+  background-color: rgba(155, 155, 155, 0.2);
+}
+.chat-text h4{
+  color: #fff!important;
+}
+.chat-text p{
+  color: rgba(255, 255, 255, 0.5) ;
+}
+.col-md-7{
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+
+/* seleccion desactivar */
+.disable-selection {
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer */
+   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+
+/* Responsive Style */
+@media (max-width: 991px) {
+  .slides {
+    left: 0;
+    width: 100%;
+  }
+  .apartados{
+    background-image: url(../imgs/empresas/ribs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    float: left;
+  }
+  .apartados:nth-child(1){
+    margin-top: 0;
+  }
+  .apartados:nth-child(2){
+    margin-top: 10px;
+  }
+
+
+  .slides .slide .content {
+	width: 100%;
+	height: 90%;
+	left: 0;
+  }
+  .second-content {
+    top: 15%;
+  }
+  .third-content {
+    top: 15%;
+  }
+  .fourth-content {
+    top: 15%;
+  }
+  .second-slide {
+    top: 140px;
+  }
+  .slide-caption h2 {
+  	font-size: 48px;
+  }
+  .tabs-content {
+    width: auto;
+    text-align: center;
+    margin: 0px 30px;
+    padding: 20px;
+  }
+  .tabs-content p {
+    margin-top: 20px;
+  }
+  #tabs ul li {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  #tabs ul {
+    float: none;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  #thumbnail ul li {
+    max-width: 80px;
+    max-height: 80px;
+    margin-left: 10px;
+  }
+  .slide-caption {
+    padding-left: 30px;
+  }
+  #tabs ul li span {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 54px;
+  }
+  #tabs ul .ui-tabs-active span {
+    line-height: 60px;
+  }
+  .featured-item {
+    padding: 30px 15px;
+  }
+  .owl-dots {
+    margin-top: 10px;
+    padding-bottom: 30px;
+  }
+  .tabs-content h2 {
+    font-size: 21px;
+  }
+  .third-slide {
+    text-align: center;
+    margin: 0px;
+  }
+  .fourth-slide {
+    margin-left: 0;
+    top: 0;
+    transform: translateY(0%);
+    margin-top: 140px;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-form h2 {
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .title_apartats{
+    font-size: 3em;
+  }
+
+}

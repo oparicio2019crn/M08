@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.login-page {
+  width: 100%;
+  padding: 12% 0 0; /* En formato móvil se coloca a la parte superior para que así el teclado no moleste. */
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: none;
+  max-width: 100%;
+  margin: 0 auto 100px;
+  padding: 45px;
+
+  border-radius: 10px;
+}
+
+.form input {
+  font-family: "Montserrat", sans-serif;
+  outline: 0;
+  background: none;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #FFF;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.form input:focus{
+  color: #FFF;
+}
+
+.form input::placeholder{
+  color: #FFF;
+}
+
+.form button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f8ab08;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: black;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #FFF;
+  color: #484b54;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #a39068;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form .register-form {
+  display: none;
+}
+
+#licence_button{
+  width: auto;
+}
+
+.title{
+  text-align: center;
+  color: #FFF;
+}

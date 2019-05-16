@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- LINKS -->
+    <!-- ICNs -->
+    <link rel="icon" sizes="192x192" href="img/.png">
+    <link rel="icon" sizes="512x512" href="img/.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="img/.png">
+    <!-- / -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact/contact.css"/>
+  <link rel="stylesheet" href="css/menu/menu.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/login_registro.css">
+  <link rel="stylesheet" href="css/login_registro2.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <!-- BOOTSTRAP -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js">
+      <!--  -->
+      <!-- jquery -->
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <!-- / -->
+  <!-- / -->
+
+  <title>Principal</title>
+</head>
+<body>
+  <!-- PRECARGA -->
+  <div class="sequence">
+
+      <div class="seq-preloader">
+        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator"><g fill="#F96D38"><path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/><path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/><path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/></g></svg>
+      </div>
+
+    </div>
+  <!-- IMG FONDO -->
+  <img src="imgs/resta/two_g_D.jpg" id="background_login">
+  <!-- FLECHA -->
+      <div class="flecha">
+        <a href="principal.html#4"><i class="fa fa-angle-left"></i></a>
+      </div>
+  <!-- // -->
+
+    <!-- CUERPO  -->
+    <div class="slides" style="width: 100%; left: 0;">
+      <div class="slide content" id="1">
+        <div id="slider-wrapper" style="width: 95%; margin: 0 auto;">
+
+          <div class="chat_content">
+          <img src="imgs/icns/perfil_icon_b.png" alt="Avatar" style="width:100%;">
+          <p style="text-align: left;">Bona tarda, sóc el Josep del Ribs de Barcelona.</p>
+          <span class="time-right">11:00</span>
+          </div>
+
+          <div class="chat_content darker">
+          <img src="imgs/icns/perfil_icon_b.png" alt="Avatar" class="right" style="width:100%;">
+          <p style="text-align: right;">Bona tarda Josep, en què et puc ajudar?</p>
+          <span class="time-left">11:01</span>
+          </div>
+
+          <div class="chat_content">
+          <img src="imgs/icns/perfil_icon_b.png" alt="Avatar" style="width:100%;">
+          <p style="text-align: left;">He vist que tens bona experiència com a cambrer, i has treballat a diversos llocs.</p>
+          <span class="time-right">11:02</span>
+          </div>
+
+          <div class="chat_content darker">
+          <img src="imgs/icns/perfil_icon_b.png" alt="Avatar" class="right" style="width:100%;">
+          <p style="text-align: right;">Sí, però actualment estic treballant en el Tapa-Tapa de Barcelona, moltes gràcies igualment.</p>
+          <span class="time-left">11:05</span>
+          </div>
+          <div class="chat_chats" style="background: none; border: none;">
+            <input type="text" name="" value="" placeholder="Escriu aquí...">
+            <input type="button" name="" value="Enviar">
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+<!-- // -->
+
+
+</body>
+<script type="text/javascript">
+// EMPRESAS //
+
+var imgsempresas=["imgs/empresas/mcdonalds.jpeg",
+              "imgs/empresas/ribs.jpg",
+              "imgs/empresas/starbucks.jpg",
+              "imgs/empresas/tapa-tapa.jpg",
+              "imgs/empresas/tribuwoki.jpg",
+              "imgs/empresas/viena.jpg"];
+
+var apart=document.getElementsByClassName('apartados');
+var i=0;
+
+// REPETICIÓN //
+for(i; i < apart.length; i++){
+  apart[i].style.backgroundImage="url(" + imgsempresas[i%imgsempresas.length] + ")"; // i%posterslist.length - Modul - Bucle amb residu de divisio (per repetir una llista).
+}
+// --------- //
+
+// LIKE BUTTON
+
+$(function() {
+
+  $(".heart").on("click", function() {
+    $(this).toggleClass("heart-blast");
+  });
+});
+
+// ------------------
+
+
+$(document).ready(function(){
+  $('#buscador').keyup(function(){
+     var nombres = $('.enterprise_name');
+     var buscando = $(this).val();
+     var item='';
+     for( var i = 0; i < nombres.length; i++ ){
+         item = $(nombres[i]).html().toLowerCase();
+          for(var x = 0; x < item.length; x++ ){
+              if( buscando.length == 0 || item.indexOf( buscando ) > -1 ){
+                  $(nombres[i]).parents('.apartados').show();
+              }else{
+                   $(nombres[i]).parents('.apartados').hide();
+              }
+          }
+     }
+  });
+});
+
+
+
+
+</script>
+
+  <script src="js/script.js"></script>
+
+</html>
