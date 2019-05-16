@@ -25,7 +25,7 @@ a:hover{
     height: 100%;
     z-index: 9999;
     background: url('../imgs/logo/logo.svg') 50% 50% no-repeat #3a3a3a;
-    background-size: 50%;
+    background-size: 30%;
 }
 
 /* ACORDEON */
