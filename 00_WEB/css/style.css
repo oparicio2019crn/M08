@@ -176,7 +176,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 49%;
+  width: 50%;
   height: 300px;
   margin-top: 20px;
   float: left;
@@ -242,6 +242,26 @@ body {
 }
 
 /* / */
+
+/* FLECHA */
+.flecha{
+  position: fixed;
+  top: 52px;
+  left: 10px;
+  z-index: 9999999;
+}
+
+.flecha i{
+  color: #f8ab08;
+  font-size: 3em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.flecha:hover i{
+  color: #FFF;
+}
+
+
 /* TEXT CHAT */
 .chat-text{
   background-color: rgba(255, 255, 255, 0.2);
@@ -294,6 +314,9 @@ body {
   }
   .apartados:nth-child(2){
     margin-top: 10px;
+  }
+  .apartado-int p{
+    font-size: 0.8em;
   }
 
 

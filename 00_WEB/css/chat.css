@@ -1,0 +1,93 @@
+/* CHAT COMMENTS */
+
+.chat_content {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.chat_content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.chat_content p{
+	margin-top: 25px;
+}
+
+.chat_content img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.chat_content img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.chat_chats input:nth-child(1){
+	width: 95%;
+	height: 40px;
+	border-radius: 30px;
+	text-indent: 10px;
+	position: fixed;
+	left: 2.5%;
+	right: 2.5%;
+	bottom: 80px;
+
+}
+.chat_chats input:nth-child(2){
+	width: 30%;
+	height: 60px;
+	border-radius: 30px;
+	bottom: 10px;
+	position: fixed;
+	left: 35%;
+	right: 35%;
+}
+input:focus{
+	outline:0px;
+}
+
+#escriure{
+	width: 90%;
+}
+#enviar-escriure{
+	width: 10%;
+	float: right;
+}
+
+
+
+
+/* ENVIAR MISSATGE */
+.enviar_missatge{
+	padding: 10px;
+	border-radius: 30px;
+	background: #f8ab08;
+	transition: 0.3s;
+}
+.enviar_missatge:hover{
+	background: #c68806;
+}
