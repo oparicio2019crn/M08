@@ -1,6 +1,6 @@
 // LOADER PAGE //
 $(window).load(function() {
-    $(".loader").delay(2000).fadeOut();
+    $(".loader").delay(6500).fadeOut();
 });
 // ------- //
 
