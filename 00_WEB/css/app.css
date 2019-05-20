@@ -1,0 +1,36 @@
+#icon
+{
+  height: 180px;
+  width: 180px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 90px;
+  font-size: 80px;
+  text-align: center;
+
+  background: #FF704D;
+  color: #fafafa;
+  border: 2px dashed #fafafa;
+  box-shadow: 0px 0px 5px 5px #FF704D;
+}
+
+#icon:hover
+{
+  cursor: pointer;
+
+  background: #fafafa;
+  color: #FF704D;
+  border: 2px dashed #FF704D;
+  box-shadow: 0px 0px 5px 5px #fafafa;
+}
+
+.android-icon
+{
+  padding-top: 30px;
+}
+
+.label
+{
+  font-size: 20px;
+  font-weight: normal;
+}
