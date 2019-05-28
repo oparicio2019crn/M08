@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="../css/contact/contact.css"/>
   <link rel="stylesheet" href="../css/menu/menu.css">
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/chat.css">
   <link rel="stylesheet" href="../css/login_registro.css">
   <link rel="stylesheet" href="../css/login_registro2.css">
   <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/chat.css">
+  <link rel="stylesheet" href="../css/profile_edit.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- FONTS / ICNS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -39,11 +40,6 @@
         <!-- / -->
       <!-- / -->
   <!-- / -->
-  <style media="screen">
-    *{
-      position: static;
-    }
-  </style>
 
   <title>Principal</title>
 </head>
@@ -52,23 +48,21 @@
   <img src="../imgs/resta/two_g_D.jpg" id="background_login">
     <!-- FLECHA -->
         <div class="flecha">
-          <a href="../principal.html"><i class="fa fa-angle-left"></i></a>
+          <a href="perfil_usuari1.html"><i class="fa fa-angle-left"></i></a>
         </div>
     <!-- // -->
-    <!-- edit perfil -->
 
-      <a href="perfil_empresa3_edit.html" class="profile_edit"><i class="fa fa-pencil-square-o" style=""></i></a>
-
-    <!-- // -->
     <!-- CAP  -->
     <div class="body-back">
   		<div class="masthead pdng-stn1">
   			<div class="phone-box wrap push" id="home">
-  				<div class="banner_info_agile_w3ls" style="min-height: 200px;">
+  				<div class="banner_info_agile_w3ls">
   					<div class="banner_info_agile_w3ls_inner">
-
-  						<h2>Starbucks</h2>
-  						<span>Barcelona</span>
+  						<img src="../imgs/icns/icn_foto.png" alt=" " class="img-responsive profile-img foto_perfil">
+                <div>
+              <input class="input_h2" placeholder="Nom" style=""></input>
+  						<input class="input_h2" placeholder="Càrrec"></input>
+            </div>
   						<ul class="top-links_w3layouts">
   							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
   							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -81,89 +75,86 @@
   				<!-- INFO -->
   				<div class="about">
   					<div class="wrap_view_agileits">
-  						<h3 class="head">Treballadors</h3>
-  						<p class="head_para">Llista de treballadors</p>
-  						<div class="inner_section_wthree">
+  						<h3 class="head">Coneixem</h3>
+  						<p class="head_para">Una petita informació sobre mi</p>
+  						<div class="inner_section_wthree" style="margin-bottom: 100px;">
   							<div class="col-md-7 about-left">
-                  <a href="perfil_usuari3.html"><div class="about-left-info">
-  									<h4>Elisenda Fernández</h4>
-  									<p>Cambrera / Ajudant de cuina</p>
-  								</div></a>
-  								<a href="perfil_usuari2.html"><div class="about-left-info">
-  									<h4>Marc López</h4>
-  									<p>Cambrer</p>
-  								</div></a>
-  								<a href="perfil_usuari1.html"><div class="about-left-info">
-  									<h4>Lluís Paricio</h4>
-  									<p>Cuiner</p>
-  								</div></a>
-  								<a href="perfil_usuari4.html"><div class="about-left-info">
-  									<h4>Patricia González</h4>
-  									<p>Barman</p>
-  								</div></a>
-  								<a href="perfil_usuari5.html"><div class="about-left-info">
-  									<h4>Oriol Llop</h4>
-  									<p>Cambrer</p>
-  								</div></a>
+  								<div class="about-left-info">
+  									<h4>Carrec de feina</h4>
+  									<input class="input_treballadors" placeholder="Escriu aquí"></input>
+  								</div>
+  								<div class="about-left-info">
+  									<h4>Nom</h4>
+  									<input class="input_treballadors" placeholder="Escriu aquí"></input>
+  								</div>
+  								<div class="about-left-info">
+  									<h4>Gènere</h4>
+  									<input class="input_treballadors" placeholder="Escriu aquí"></input>
+  								</div>
+  								<div class="about-left-info">
+  									<h4>Adreça</h4>
+  									<input class="input_treballadors" placeholder="Escriu aquí"></input>
+  								</div>
+  								<div class="about-left-info">
+  									<h4>Adreça electronica</h4>
+  									<input class="input_treballadors" placeholder="Escriu aquí"></input>
+  								</div>
   							</div>
   							<div class="col-md-5 ab-right">
-                  <div class="about-right-img"  style="background-image: url(../imgs/empresas/starbucks.png);">
-
+  								<div class="about-right-img">
+  									<img src="../imgs/icns/icn_foto.png" alt="" class="foto_info">
   								</div>
   							</div>
   							<div class="clearfix"> </div>
   						</div>
   					</div>
   				</div>
-  				<!-- VALORACIONS -->
+  				<!-- MES INFO -->
   				<div class="history">
   					<div class="wrap_view_agileits">
-              <h3 class="head three">Valoracions</h3>
-  						<p class="head_para two">Valoracions i comentaris</p>
+  						<h3 class="head three">Feines</h3>
+  						<p class="head_para two">Les meves feines</p>
   						<div class="inner_section_wthree">
-                <!-- ESTRELLAS -->
-                <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
-                </div>
-                <div class="num_rating">
-                  <h2>3,5/5</h2>
-                </div>
-                <!-- / -->
+  							<div class="col-md-4 history-grid" style="margin-bottom: 200px;">
 
-                <!-- COMENTARIOS -->
-                <h2 style="">Comentaris</h2>
-                  <div class="chat_content">
-                    <img src="../imgs/icns/perfil_icon_b.png" alt="Avatar" style="width:100%;">
-                    <p>Un lloc genial!</p>
-                    <span class="time-right">11:00</span>
-                  </div>
+  								<div class="story-img" style="cursor:pointer;">
+  									<span class="fa fa-cog" aria-hidden="true"></span>
+  								</div>
+  								<div class="caption_story_w3agile">
+                    <input class="input_treballadors" placeholder="Lloc de feina" style="text-align: left;"></input>
 
-                  <div class="chat_content darker">
-                    <img src="../imgs/icns/perfil_icon_b.png" alt="Avatar" style="width:100%;">
-                    <p>Tot molt bò!</p>
-                    <span class="time-right">11:01</span>
-                  </div>
+  									<textarea class="input_feines" placeholder="Descripció"></textarea>
 
-                  <div class="chat_content">
-                    <img src="../imgs/icns/perfil_icon_b.png" alt="Avatar" style="width:100%;">
-                    <p>Una atenció al client excel·lent!</p>
-                    <span class="time-right">11:02</span>
-                  </div>
+  								</div>
+  								<div class="clearfix"></div>
+  							</div>
+  							<div class="col-md-4 history-grid" style="margin-bottom: 200px;">
 
-                  <div class="chat_content darker">
-                    <img src="../imgs/icns/perfil_icon_b.png" alt="Avatar" style="width:100%;">
-                    <p>Molt content!</p>
-                    <span class="time-right">11:05</span>
-                  </div>
-                    <input type="text" name="" value="" placeholder="Escriu aquí..." id="escriure">
-                    <input type="button" name="" value="Enviar" id="enviar-escriure">
+  								<div class="story-img" style="cursor:pointer;">
+  									<span class="fa fa-laptop" aria-hidden="true"></span>
+  								</div>
+  								<div class="caption_story_w3agile">
+                    <input class="input_treballadors" placeholder="Lloc de feina" style="text-align: left;"></input>
 
+  									<textarea class="input_feines" placeholder="Descripció"></textarea>
 
-                  <!-- / -->
+  								</div>
+  								<div class="clearfix"></div>
+  							</div>
+  							<div class="col-md-4 history-grid">
+
+  								<div class="story-img" style="cursor:pointer;">
+  									<span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+  								</div>
+  								<div class="caption_story_w3agile">
+                    <input class="input_treballadors" placeholder="Lloc de feina" style="text-align: left;"></input>
+
+  								<textarea class="input_feines" placeholder="Descripció"></textarea>
+
+  								</div>
+  								<div class="clearfix"></div>
+  							</div>
+  							<div class="clearfix"></div>
   						</div>
   					</div>
   				</div>
@@ -175,7 +166,9 @@
   				<!--//footer-->
   				<div class="footer">
   					<div class="clearfix"> </div>
+            <input type="button" class="button" name="" value="Enviar missatge" style="left: 0; right: 0; width:60%;" onclick="window.location.href='chat.html'" />
   					<div class="pro-menu footer_nav">
+
               <ul>
   							<li class="active"><a href="../principal.html#1">Inici</a></li>
   							<li><a href="../principal.html#2">Preferits</a></li>

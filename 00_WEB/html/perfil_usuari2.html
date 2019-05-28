@@ -21,10 +21,11 @@
   <link rel="stylesheet" href="../css/login_registro.css">
   <link rel="stylesheet" href="../css/login_registro2.css">
   <link rel="stylesheet" href="../css/profile.css">
-  <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/chat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- FONTS / ICNS -->
-  <link href="../https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- / -->
       <!-- BOOTSTRAP -->
       <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
@@ -50,20 +51,26 @@
         </div>
     <!-- // -->
 
+    <!-- edit perfil -->
+
+      <a href="perfil_usuari_edit.html" class="profile_edit"><i class="fa fa-pencil-square-o" style=""></i></a>
+
+    <!-- // -->
+
     <!-- CAP  -->
     <div class="body-back">
   		<div class="masthead pdng-stn1">
   			<div class="phone-box wrap push" id="home">
   				<div class="banner_info_agile_w3ls">
   					<div class="banner_info_agile_w3ls_inner">
-  						<img src="../imgs/images/t2.jpg" alt=" " class="img-responsive profile-img" style="border-radius: 50%;">
+  						<img src="../imgs/images/g10.jpg" alt=" " class="img-responsive profile-img" style="border-radius: 50%;">
   						<h2>Marc López</h2>
   						<span>Cambrer</span>
   						<ul class="top-links_w3layouts">
-  							<li><a href="../#"><i class="fa fa-facebook"></i></a></li>
-  							<li><a href="../#"><i class="fa fa-twitter"></i></a></li>
-  							<li><a href="../#"><i class="fa fa-linkedin"></i></a></li>
-  							<li><a href="../#"><i class="fa fa-google-plus"></i></a></li>
+  							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+  							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+  							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
   						</ul>
   					</div>
   				</div>
@@ -81,7 +88,7 @@
   								</div>
   								<div class="about-left-info">
   									<h4>Nom</h4>
-  									<p>Marc López</p>
+  									<p>Lluís Paricio</p>
   								</div>
   								<div class="about-left-info">
   									<h4>Gènere</h4>
@@ -93,12 +100,12 @@
   								</div>
   								<div class="about-left-info">
   									<h4>Adreça electronica</h4>
-  									<p><a href="../mailto:rlopez@gmail.com">rlopez@gmail.com</a></p>
+  									<p><a href="../mailto:mlopez@gmail.com">mlopez@gmail.com</a></p>
   								</div>
   							</div>
   							<div class="col-md-5 ab-right">
   								<div class="about-right-img">
-  									<img src="../imgs/images/g1.jpg" alt="">
+  									<img src="../imgs/images/g10.jpg" alt="" style="width: auto;">
   								</div>
   							</div>
   							<div class="clearfix"> </div>
@@ -111,7 +118,7 @@
   						<h3 class="head three">Feines</h3>
   						<p class="head_para two">Les meves feines</p>
   						<div class="inner_section_wthree">
-  							<div class="col-md-4 history-grid">
+  							<div class="col-md-4 history-grid" style="margin-bottom: 200px;">
   								<h4>Hotel Ibis</h4>
   								<div class="story-img">
   									<span class="fa fa-cog" aria-hidden="true"></span>
@@ -123,7 +130,7 @@
   								</div>
   								<div class="clearfix"></div>
   							</div>
-  							<div class="col-md-4 history-grid">
+  							<div class="col-md-4 history-grid" style="margin-bottom: 200px;">
   								<h4>Bar Tribal</h4>
   								<div class="story-img">
   									<span class="fa fa-laptop" aria-hidden="true"></span>
@@ -159,7 +166,7 @@
   				<!--//footer-->
   				<div class="footer">
   					<div class="clearfix"> </div>
-            <input type="button" class="enviar_missatge" name="" value="Enviar missatge" onclick="window.location.href='chat.html'" />
+            <input type="button" class="button" name="" value="Enviar missatge" style="left: 0; right: 0; width:60%;" onclick="window.location.href='chat.html'" />
   					<div class="pro-menu footer_nav">
 
               <ul>
@@ -187,11 +194,11 @@
 // EMPRESAS //
 
 var imgsempresas=["imgs/empresas/mcdonalds.jpeg",
-              "../imgs/empresas/ribs.jpg",
-              "../imgs/empresas/starbucks.jpg",
-              "../imgs/empresas/tapa-tapa.jpg",
-              "../imgs/empresas/tribuwoki.jpg",
-              "../imgs/empresas/viena.jpg"];
+              "imgs/empresas/ribs.jpg",
+              "imgs/empresas/starbucks.jpg",
+              "imgs/empresas/tapa-tapa.jpg",
+              "imgs/empresas/tribuwoki.jpg",
+              "imgs/empresas/viena.jpg"];
 
 var nombreempresas=["McDonalds",
               "Ribs",
@@ -214,6 +221,6 @@ for(i; i < enterprisename.length; i++){
 // --------- //
 </script>
 
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </html>

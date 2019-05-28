@@ -74,7 +74,7 @@ nav a::before {
 	margin-top: 0px;
   top: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 999999999999999999999999999;
   position: fixed;
  	display: inline-block;
   text-align: center;

@@ -17,11 +17,12 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/contact/contact.css"/>
   <link rel="stylesheet" href="../css/menu/menu.css">
-  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/chat.css">
+  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/login_registro.css">
   <link rel="stylesheet" href="../css/login_registro2.css">
   <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/profile_edit.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- FONTS / ICNS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -39,13 +40,14 @@
         <!-- / -->
       <!-- / -->
   <!-- / -->
+
+  <title>Principal</title>
+
   <style media="screen">
     *{
       position: static;
     }
   </style>
-
-  <title>Principal</title>
 </head>
 <body>
   <!-- <div class="loader"></div> -->
@@ -55,10 +57,11 @@
           <a href="../principal.html"><i class="fa fa-angle-left"></i></a>
         </div>
     <!-- // -->
-    <!-- edit perfil -->
-
-      <a href="perfil_empresa2_edit.html" class="profile_edit"><i class="fa fa-pencil-square-o" style=""></i></a>
-
+    <!-- FLECHA -->
+        <div class="flecha">
+          <a href="perfil_empresa1.html"><input type="submit" class="guardar_perfil" value="Guardar" style=""></input>
+</a>
+        </div>
     <!-- // -->
 
     <!-- CAP  -->
@@ -68,8 +71,8 @@
   				<div class="banner_info_agile_w3ls" style="min-height: 200px;">
   					<div class="banner_info_agile_w3ls_inner">
 
-  						<h2>Ribs</h2>
-  						<span>Barcelona</span>
+              <input class="input_h2" placeholder="HESPERIA" style=""></input>
+  						<input class="input_h2 input_lloc" placeholder="Cornellà de Llobregat"></input>
   						<ul class="top-links_w3layouts">
   							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
   							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -85,8 +88,8 @@
   						<h3 class="head">Treballadors</h3>
   						<p class="head_para">Llista de treballadors</p>
   						<div class="inner_section_wthree">
-  							<div class="col-md-7 about-left">
-                  <a href="perfil_usuari3.html"><div class="about-left-info">
+  							<div class="col-md-7 about-left center_cont">
+  								<a href="perfil_usuari3.html"><div class="about-left-info">
   									<h4>Elisenda Fernández</h4>
   									<p>Cambrera / Ajudant de cuina</p>
   								</div></a>
@@ -106,10 +109,16 @@
   									<h4>Oriol Llop</h4>
   									<p>Cambrer</p>
   								</div></a>
+                  <div class="about-left-info">
+                    <h4>AFEGIR TREBALLADOR</h4>
+                    <input class="input_treballadors" placeholder="Nom i Cognom..."></input>
+                    <input class="input_treballadors" placeholder="Carrec..."></input>
+                    <button type="submit" class="afegir" value="Enviar">Afegir</button>
+                  </div>
   							</div>
-  							<div class="col-md-5 ab-right">
-  								<div class="about-right-img" style="background-image: url(../imgs/empresas/ribs.png);">
 
+  							<div class="col-md-5 ab-right">
+  								<div class="about-right-img bg_blur bg_img"  style="background-image: url(../imgs/empresas/hesperia.png);">
   								</div>
   							</div>
   							<div class="clearfix"> </div>
@@ -160,8 +169,8 @@
                     <p>Molt content!</p>
                     <span class="time-right">11:05</span>
                   </div>
-                    <input type="text" name="" value="" placeholder="Escriu aquí..." id="escriure">
-                    <input type="button" name="" value="Enviar" id="enviar-escriure">
+                    <input type="text" name="" value="" placeholder="Escriu aquí..." class="text_chat" id="escriure">
+                    <button type="submit" class="button" value="Enviar">Enviar</button>
 
 
                   <!-- / -->
@@ -201,19 +210,23 @@
 <script type="text/javascript">
 // EMPRESAS //
 
-var imgsempresas=["imgs/empresas/hesperia.png",
+var imgsempresas=["imgs/empresas/mcdonalds.png",
               "imgs/empresas/ribs.png",
               "imgs/empresas/starbucks.png",
               "imgs/empresas/tapa-tapa.png",
               "imgs/empresas/tribuwoki.png",
               "imgs/empresas/viena.png"];
 
-var foto_perfil=document.getElementsByClassName('apartados');
+var apart=document.getElementsByClassName('apartados');
 var i=0;
 
 // REPETICIÓN //
 for(i; i < apart.length; i++){
   apart[i].style.backgroundImage="url(" + imgsempresas[i%imgsempresas.length] + ")"; // i%posterslist.length - Modul - Bucle amb residu de divisio (per repetir una llista).
+}
+
+for(i; i < enterprisename.length; i++){
+  enterprisename[i].innerHTML = nombreempresas; // i%posterslist.length - Modul - Bucle amb residu de divisio (per repetir una llista).
 }
 // --------- //
 </script>
