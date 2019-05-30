@@ -1403,6 +1403,18 @@
 		.about-left-info{
 			text-align: center;
 		}
+			.about-right-img img {
+				width: 300px;
+				height: 300px;
+			}
+
+			.button{
+				width: 100% !important;
+			}
+			.button_send{
+				left: 0; right: 0;
+			}
+
 
 	}
 
@@ -1424,6 +1436,7 @@
 	    h3.head.four {
 			font-size: 1.4em;
 		}
+
 	}
 
 	@media (max-width: 667px) {
@@ -1461,6 +1474,10 @@
 		}
 		.blog_con h4 {
 		    font-size: 0.9em;
+		}
+		.profile-img, .foto_info, .about-right-img img{
+			width: 100% !important;
+			height: auto !important;
 		}
 	}
 

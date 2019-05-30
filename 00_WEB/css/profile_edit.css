@@ -141,4 +141,13 @@
 		transition: 0.3s;
 			max-width: 400px !important;
 	}
+	.input_h2{
+		font-size: 1.3em;
+		width: 100%;
+	}
+	.input_h2::placeholder{
+		font-size: 1em;
+	}
+	
+
 }
